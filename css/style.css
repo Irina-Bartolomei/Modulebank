@@ -1,0 +1,226 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    width: 1440px;
+    color: #000;
+}
+
+/* Header styles start*/
+
+.wrapper{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header{
+    background-color: #6F2DC2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1440px;
+}
+
+.header_logo span{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22.5px;
+    color: white;
+}
+
+.header_logo-pic{
+    width: 32;
+    height: 32;
+    fill: none;
+}
+
+.vector{
+    width: 20;
+    height: 20;
+    fill: none;
+}
+
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+}
+
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.header_item{
+    margin-right: 40px;
+}
+
+.header_item:last-child{
+    margin-right: 0px;
+}
+
+.header_item span,
+.header_link{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+
+}  
+
+.login button{
+    width: 89px;
+    height: 32px;
+    gap: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    line-height: 21px;
+    cursor: pointer;
+    color: white;
+}
+
+.login button img{
+
+    /* padding-bottom: 4px; */
+}
+
+.call_login{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.call{
+    margin-right: 27.16px;
+    padding: 4.19px;
+}
+
+/* Header styles end*/
+
+/* Seller styles start*/
+
+.seller{
+    min-height: 100vh;
+    /* display: flex;
+    height: 662px;*/
+    background-color: #F9F4FF; 
+    padding-top: 173px;
+}
+
+main{
+    /* padding-top: 60px; */
+}
+
+.seller_text{
+     /* height: 336px;
+     width: 580px;
+     background-color: blueviolet;
+     margin-top: 113px; */
+     /* margin-left: 120px; */
+}
+
+.seller_title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: 'Inter';
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+.seller_subtitle{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    font-family: 'Inter';
+    margin-bottom: 30px;
+}
+
+.free{
+    width: 244px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px, 30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: 'Inter';
+    text-align: center;
+    background-color: #6F2DC2;
+    background: linear-gradient(45deg,#A965ED, #FA71CD);
+    margin-bottom: 20px;
+}
+
+p.price{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.img_headphone{
+    margin-top: -100px;
+    margin-left: 60px;
+}
+/* Seller styles end*/
+
+/* Carousel styles start*/
+
+.carousel-container {
+    /* width: 80%; /* Ширина карусели */
+   /* margin: 50px auto; /* Центрирование по горизонтали */
+    padding: 30px, 25px;
+    overflow: hidden; /* Скрытие частей, выходящих за пределы */
+}
+
+.carousel {
+    display: flex; /* Выстраиваем элементы в строку */
+    transition: transform 0.5s ease; /* Анимация при изменении позиции */
+}
+
+.carousel-item {
+    /*min-width: 10%; /* Каждый слайд занимает 10% ширины */
+    /*box-sizing: border-box; /* Устанавливаем границы и отступы */
+    display: flex; /* Используем flex для выравнивания контента */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    padding: 20px; /* Отступы внутри слайда */
+    /*background-color: white;  Фон слайда */
+}
+
+.carousel-item img {
+    /*max-width: 100px; /* Максимальная ширина изображения */
+    margin-right: 15px; /* Отступ между изображением и текстом */
+}
+
+.carousel-item  {
+    font-family: 'Inter';
+    font-weight: 600;
+    line-height: 30px;
+    font-size: 20px; /* Размер шрифта */
+    letter-spacing: -0.02em;
+}
+
+/* Carousel styles end*/
